@@ -1,1 +1,60 @@
-hi
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>MindMaze Puzzle Game</title>
+
+<link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+<h1>MindMaze Puzzle Game</h1>
+
+<div id="loginScreen">
+
+<h2>Puzzle Game Login</h2>
+
+<input id="username" placeholder="Enter Username">
+
+<select id="difficulty">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option>
+</select>
+
+<button onclick="loginUser()">Start Game</button>
+
+</div>
+
+<h3 id="playerInfo"></h3>
+<div id="gameMenu" style="display:none">
+
+<h2>Puzzle Game Menu</h2>
+
+<button onclick="openPuzzle('sliding')">Sliding Puzzle</button>
+<button onclick="openPuzzle('memory')">Memory Pattern</button>
+<button onclick="openPuzzle('logic')">Logic Puzzle</button>
+<button onclick="openPuzzle('word')">Word Scramble</button>
+
+</div>
+
+<div id="gameArea"></div>
+
+<script src="game.js"></script>
+
+<button onclick="logoutUser()">Logout</button>
+<div id="stats"></div>
+
+</body>
+
+</html>
+
+
+
+
+
