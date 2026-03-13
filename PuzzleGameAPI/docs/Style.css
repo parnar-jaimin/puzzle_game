@@ -1,0 +1,208 @@
+/* GLOBAL */
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#1e1e2f,#0f3460);
+color:white;
+text-align:center;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+
+/* LOGIN SCREEN */
+
+#loginScreen{
+background:rgba(255,255,255,0.05);
+padding:40px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+#loginScreen input,
+#loginScreen select{
+padding:10px;
+margin:10px;
+border-radius:8px;
+border:none;
+width:200px;
+}
+
+
+/* MENU */
+
+#gameMenu{
+background:rgba(255,255,255,0.05);
+padding:40px;
+border-radius:15px;
+box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+
+/* PLAYER INFO */
+
+#playerInfo{
+color:#00ffff;
+margin-bottom:20px;
+}
+
+
+/* BUTTONS */
+
+button{
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+border:none;
+padding:12px 20px;
+margin:10px;
+color:white;
+font-size:16px;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 10px #00c6ff;
+}
+
+
+/* GAME AREA */
+
+#gameArea{
+margin-top:20px;
+padding:30px;
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+}
+
+
+/* GAME INFO */
+
+.game-info{
+margin-bottom:20px;
+font-size:18px;
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+
+/* SLIDING PUZZLE BOARD */
+
+#puzzleBoard{
+display:grid;
+grid-template-columns:repeat(3,100px);
+gap:8px;
+justify-content:center;
+margin-top:20px;
+}
+
+
+/* TILE */
+
+.tile{
+width:100px;
+height:100px;
+background:linear-gradient(45deg,#ff512f,#dd2476);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+font-weight:bold;
+border-radius:10px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.tile:hover{
+transform:scale(1.05);
+}
+
+.empty{
+background:transparent;
+cursor:default;
+}
+
+
+/* MEMORY PUZZLE */
+
+#memoryBoard{
+display:grid;
+grid-template-columns:repeat(3,80px);
+gap:10px;
+justify-content:center;
+margin-top:20px;
+}
+
+.memoryTile{
+width:80px;
+height:80px;
+background:#444;
+border-radius:10px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.memoryTile:hover{
+transform:scale(1.1);
+background:#666;
+}
+
+
+/* SUDOKU / GRID */
+
+#sudokuGrid{
+display:grid;
+grid-template-columns:repeat(9,40px);
+gap:4px;
+justify-content:center;
+margin-top:20px;
+}
+
+.cell{
+width:40px;
+height:40px;
+text-align:center;
+font-size:18px;
+border-radius:5px;
+border:none;
+}
+
+
+/* WORD SCRAMBLE */
+
+#wordInput{
+padding:10px;
+border-radius:8px;
+border:none;
+margin-top:10px;
+}
+
+
+/* SELECT */
+
+select{
+padding:10px;
+border-radius:8px;
+border:none;
+margin:10px;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes glow{
+0%{box-shadow:0 0 5px #00ffff;}
+50%{box-shadow:0 0 20px #00ffff;}
+100%{box-shadow:0 0 5px #00ffff;}
+}
+
+button:hover{
+animation:glow 1s infinite;
+}
